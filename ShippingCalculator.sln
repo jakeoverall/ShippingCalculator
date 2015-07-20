@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B1992301-7320-4203-9AF4-64426AF897AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DD3C31E-E81D-4886-97FA-E3B17E17A288}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ShippingCalculator.Web", "src\ShippingCalculator\ShippingCalculator.Web.xproj", "{4EF5344F-E2F3-472C-A49A-68387F2165FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EF5344F-E2F3-472C-A49A-68387F2165FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF5344F-E2F3-472C-A49A-68387F2165FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF5344F-E2F3-472C-A49A-68387F2165FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF5344F-E2F3-472C-A49A-68387F2165FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4EF5344F-E2F3-472C-A49A-68387F2165FC} = {B1992301-7320-4203-9AF4-64426AF897AE}
+	EndGlobalSection
+EndGlobal
