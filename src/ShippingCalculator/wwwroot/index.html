@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="ShippingCalculator">
+
+<head>
+    <meta charset="utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="Jake Overall Software Engineer Resume" name="description">
+    <title>Jake Overall Software Engineer Resume</title>
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/theme.css">
+</head>
+
+<body>
+    <div data-ng-include="'app/views/templates/nav-bar.tpl.html'"></div>
+    <div class="container main-content">
+        <div data-ui-view></div>
+    </div>
+    <scripts>
+        <script type="text/javascript" src="lib/jquery/js/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/angular/angular.js"></script>
+        <script type="text/javascript" src="lib/ui-router/angular-ui-router.js"></script>
+
+        <!-- Shipping Calculator App -->
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/views/shipping/ShippingCtrl.js"></script>
+        <script type="text/javascript" src="app/views/shipping/ShippingService.js"></script>
+
+    </scripts>
+</body>
+
+</html>

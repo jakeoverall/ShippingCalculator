@@ -1,0 +1,47 @@
+﻿<header>
+    <div class="row text-right">
+        <img src="assets/img/logo.png" height="80">
+    </div>
+</header>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="well well-sm">
+            <form class="form-horizontal" data-ng-submit="calculate(zip, weight)">
+                <fieldset>
+                    <legend class="text-center header">Shipping Information</legend>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-pushpin"></i><br /> Zipcode</span>
+                        <div class="col-md-8">
+                            <input  name="name" type="text" data-ng-model="zip" placeholder="55555" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-dashboard"></i><br /> Weight</span>
+                        <div class="col-md-8">
+                            <input name="weight" data-ng-model="weight" placeholder="weight" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-usd"></i><br /> Currency</span>
+                        <div class="col-md-8">
+                            <div data-ng-include="'app/views/templates/currency-select.tpl.html'"></div>        
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div data-ng-if="total" class="alert alert-success" role="alert">
+    <h1>Your shipping cost is {{total | currency}}</h1>
+</div>
